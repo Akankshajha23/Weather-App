@@ -61,6 +61,7 @@ const formatForecastWeather = (secs, offset, data) => {
     .slice(0, 5);
   //daily
   // console.log(data);
+  //Devashish Chutiya
   const daily = data
     .filter((f) => f.dt_txt.slice(-8) === "00:00:00")
     .map((f) => ({
